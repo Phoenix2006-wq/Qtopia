@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Story - Qtopia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        nav {
+            background: linear-gradient(135deg, #6a0dad, #9b59b6);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(106, 13, 173, 0.3);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ffffff;
+            text-decoration: none;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: #ffd700;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, #f3e5f5, #e8d5f5);
+            padding: 60px 30px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            color: #6a0dad;
+        }
+
+        .guidelines-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 30px;
+        }
+
+        .guidelines-container h2 {
+            color: #6a0dad;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        .guidelines-container p {
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        .guidelines-container h3 {
+            color: #6a0dad;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .guidelines-container ul {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+
+        .guidelines-container ul li {
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        .guidelines-container .highlight-box {
+            background-color: #f9f0ff;
+            border-left: 5px solid #9b59b6;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .submit-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #6a0dad, #9b59b6);
+            color: #ffffff;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 15px rgba(106, 13, 173, 0.3);
+            margin-top: 20px;
+        }
+
+        .submit-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(106, 13, 173, 0.5);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #6a0dad, #9b59b6);
+            color: #ffffff;
+            text-align: center;
+            padding: 30px;
+            font-size: 0.95rem;
+            margin-top: 60px;
+        }
+
+        footer p {
+            margin-bottom: 5px;
+        }
+
+        footer .sparkle-text {
+            color: #ffd700;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">Q<span>topia</span></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="advice.html">Advice</a></li>
+            <li><a href="lived-experience.html">Lived Experience</a></li>
+            <li><a href="self-discovery.html">Self-Discovery</a></li>
+            <li><a href="open-letter.html">Open Letter</a></li>
+            <li><a href="other.html">Other</a></li>
+            <li><a href="submit.html">Submit</a></li>
+            <li><a href="index.html#help">Get Help</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <h1>Submit Your Story</h1>
+    </header>
+
+    <div class="guidelines-container">
+        <h2>Submission Guidelines</h2>
+        <p>We're so glad you want to share your story. Before you send us your writing, please read these simple guidelines.</p>
+
+        <h3>Please make sure:</h3>
+        <ul>
+            <li>You are the original author. The story is yours and has not been copied from someone else.</li>
+            <li>You are 16 or older. If you are under 16, please have a parent or guardian contact us first.</li>
+            <li>By sending us your story, you are giving us permission to publish it on our website. If your story is selected, we will contact you before publishing.</li>
+        </ul>
+
+        <h3>We strongly encourage you to:</h3>
+        <ul>
+            <li>Use a pseudonym (a fake name) to protect your identity.</li>
+            <li>Avoid sharing identifiable information. Please don't include your full real name, address, school, workplace, or social media handles.</li>
+            <li>Include a content warning if needed. If your story mentions anything potentially triggering (e.g., homophobia, violence, discrimination), please add a brief note at the top, like: "CW: mentions of bullying."</li>
+        </ul>
+
+        <div class="highlight-box">
+            <p>Your submission should be between 50 and 650 words.</p>
+        </div>
+
+        <h3>What to include in your email:</h3>
+        <ul>
+            <li>Subject Line: The category your story fits into (e.g., "Coming Out Story," "First Love," "Advice," "Ally Experience," "Self-Discovery")</li>
+            <li>Title: Give your piece a title.</li>
+            <li>Your Story: You can attach a Word document or paste your story directly in the email.</li>
+        </ul>
+
+        <p>Your email will never be shared.</p>
+
+        <div class="text-center">
+            <p>Ready to submit? Send your story to: qtopia.submissions@gmail.com</p>
+            <a href="mailto:qtopia.submissions@gmail.com" class="submit-btn">Share Your Story</a>
+        </div>
+    </div>
+
+    <footer>
+        <p><span class="sparkle-text">✦</span> Qtopia <span class="sparkle-text">✦</span></p>
+        <p>Your story is our strength.</p>
+        <p>© 2025 Qtopia. Made with love for the community.</p>
+    </footer>
+
+</body>
+</html>
